@@ -1,0 +1,17 @@
+[ req ]
+    default_bits       = 2048
+    default_md         = sha256
+    prompt             = no
+    encrypt_key        = no
+    distinguished_name = server
+    req_extensions = req_ext
+[ server ]
+    countryName            = "JP"                       # C=
+    stateOrProvinceName    = "Tokyo"                    # ST=
+    localityName           = "Tokyo"                    # L=
+    organizationName       = "Home"                     # O=
+    organizationalUnitName = "Home"                     # OU=
+    commonName             = "nick.home"                # CN=
+    emailAddress           = "skywalker.nick@gmail.com" # CN/emailAddress=
+[ req_ext ]
+    subjectAltName = DNS:*.nick.home,IP:127.0.0.1

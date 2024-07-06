@@ -1,0 +1,14 @@
+[ req ]
+    default_bits       = 2048
+    default_md         = sha256
+    prompt             = no
+    encrypt_key        = no
+    distinguished_name = ca
+[ ca ]
+    countryName            = "JP"                       # C=
+    stateOrProvinceName    = "Tokyo"                    # ST=
+    localityName           = "Tokyo"                    # L=
+    organizationName       = "Home"                     # O=
+    organizationalUnitName = "Technology"               # OU=
+    commonName             = "nick.home"                # CN=
+    emailAddress           = "skywalker.nick@gmail.com" # CN/emailAddress=
